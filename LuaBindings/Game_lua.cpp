@@ -11,8 +11,7 @@
 
 #include "../Game.h"
 
-namespace {
-const char *LIB_NAME = "Game";
+static const char *LIB_NAME = "Game";
 
 static int exit_game( lua_State *L )
 {
@@ -52,7 +51,6 @@ static const struct luaL_reg lib_f[] = {
     { "LoadMouse", &load_mouse },
     { "UnloadMouse", &unload_mouse },
     { NULL, NULL }
-};
 };
 
 void libgame( lua_State *L )

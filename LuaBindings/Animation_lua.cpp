@@ -13,8 +13,7 @@
 
 #include "../Animation.h"
 
-// namespace {
-// 	const char *LIB_NAME = "Animation";
+// 	static const char *LIB_NAME = "Animation";
 //
 // 	static Animation* checkType( lua_State *L )
 // 	{
@@ -97,7 +96,6 @@
 // 		{ "__gc", delete_obj },
 // 		{ NULL, NULL }
 // 	};
-// };
 //
 // void libanimation( lua_State *L )
 // {

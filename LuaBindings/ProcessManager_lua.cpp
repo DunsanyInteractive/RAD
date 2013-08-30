@@ -11,8 +11,7 @@
 
 #include "../ProcessManager.h"
 
-namespace {
-const char *LIB_NAME = "ProcessManager";
+static const char *LIB_NAME = "ProcessManager";
 
 static int call_in( lua_State *L )
 {
@@ -31,7 +30,6 @@ static const struct luaL_reg lib_f[] = {
 
 static const struct luaL_reg lib_m[] = {
     { NULL, NULL }
-};
 };
 
 void libprocessManager( lua_State *L )

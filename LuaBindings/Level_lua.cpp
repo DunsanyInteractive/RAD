@@ -12,8 +12,7 @@
 
 #include "../Level.h"
 
-namespace {
-const char *LIB_NAME = "Level";
+static const char *LIB_NAME = "Level";
 
 static Level* checkType( lua_State *L )
 {
@@ -61,7 +60,6 @@ static const struct luaL_reg lib_f[] = {
 static const struct luaL_reg lib_m[] = {
     { "addSprite", addSprite },
     { NULL, NULL }
-};
 };
 
 void liblevel( lua_State *L )

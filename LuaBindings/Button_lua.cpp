@@ -13,8 +13,7 @@
 #include "../Button.h"
 #include "../ProcessManager.h"
 
-// namespace {
-// 	const char *LIB_NAME = "Button";
+// 	static const char *LIB_NAME = "Button";
 //
 // 	static Button* checkType( lua_State *L )
 // 	{
@@ -70,7 +69,6 @@
 // 		{ "__gc", delete_obj },
 // 		{ NULL, NULL }
 // 	};
-// };
 //
 // void libbutton( lua_State *L )
 // {

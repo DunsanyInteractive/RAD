@@ -12,8 +12,7 @@
 
 #include "../Sprite.h"
 
-namespace {
-const char *LIB_NAME = "Sprite";
+static const char *LIB_NAME = "Sprite";
 
 static Sprite* checkType( lua_State *L )
 {
@@ -143,7 +142,6 @@ static const struct luaL_reg lib_m[] = {
     { "__gc", delete_obj },
     { "rotation", rotation },
     { NULL, NULL }
-};
 };
 
 void libsprite( lua_State *L )

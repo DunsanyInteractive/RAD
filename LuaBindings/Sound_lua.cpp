@@ -13,8 +13,7 @@
 
 #include "../Sound.h"
 
-namespace {
-const char *LIB_NAME = "Sound";
+static const char *LIB_NAME = "Sound";
 
 static Sound* checkType( lua_State *L )
 {
@@ -131,8 +130,6 @@ static const struct luaL_reg lib_m[] = {
     { "stop", stop },
     { "__gc", delete_sound },
     { NULL, NULL }
-};
-
 };
 
 void libsound( lua_State *L )
